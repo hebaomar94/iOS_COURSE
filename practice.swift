@@ -229,3 +229,17 @@ print(point)
     
 }
 
+
+//how to make extension
+//make newgroup
+//new Swift file named UIView+extenstion
+
+import UIKit
+extension UIView {
+    //for radius 
+    func cornerRadus(_ radius: CGFloat) {
+       self.layer.cornerRadius = radius
+    }
+    
+}
+
