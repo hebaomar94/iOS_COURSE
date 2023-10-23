@@ -217,4 +217,15 @@ print(point)
 point.x = 20
 print(point)
 
+//how to make Radus in app 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        cornerRadus()
+    }
+    private func cornerRadus() {
+        creatAccountButton .layer.cornerRadius = 25
+    }
+    
+    
+}
 
