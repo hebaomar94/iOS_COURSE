@@ -93,3 +93,37 @@ let b: parent = child()
 a.letMeGo()
 b.letMeGo()
 
+
+
+//8. Protocol
+//Write a protocol that contains basic functions to do the calculator as in example 6. [Convert calculator class to calculator protocol can be implemented at any calss]
+protocol Calculator {
+    func add(_ x: Double, _ y: Double) -> Double
+    func subtract(_ x: Double, _ y: Double) -> Double
+    func multiply(_ x: Double, _ y: Double) -> Double
+    func divide(_ x: Double, _ y: Double) -> Double
+}
+
+class BasicCalculator: Calculator {
+    func add(_ x: Double, _ y: Double) -> Double {
+        return x + y
+    }
+    
+    func subtract(_ x: Double, _ y: Double) -> Double {
+        return x - y
+    }
+    
+    func multiply(_ x: Double, _ y: Double) -> Double {
+        return x * y
+    }
+    
+    func divide(_ x: Double, _ y: Double) -> Double {
+        if y != 0 {
+            return x / y
+        } else {
+            // Handle division by zero error here
+            return Double.nan
+        }
+    }
+}
+
