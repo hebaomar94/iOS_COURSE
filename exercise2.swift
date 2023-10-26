@@ -73,4 +73,23 @@ print(basicCalc.sub(x: 4 , y: 8))
 print(basicCalc.div(x: 4 , y: 8))
 
 
+//Ques 7
+//Write a class that extends from another class and change implementation for his super function, for example parent class has function to print “Main” and sub class has the same function but print “Sub”.
+
+class parent {
+    func letMeGo (){
+        print ("main")
+    }
+    
+}
+class child: parent {
+    override func letMeGo() {
+        print("sub")
+    }
+}
+
+let a = child()
+let b: parent = child()
+a.letMeGo()
+b.letMeGo()
 
