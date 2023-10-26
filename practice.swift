@@ -243,3 +243,9 @@ extension UIView {
     
 }
 
+
+
+//to make screen close :
+
+ @IBAction func actionClose(_ sender: Any) {
+   dismiss(animated: true)
